@@ -30,10 +30,8 @@ namespace WebAPIGrid.Controllers
 
                     students = readTask.Result;
                 }
-                else //web api sent error response 
-                {
-                    //log response status here..
-
+                else
+                {                 
                     students = Enumerable.Empty<DataViewModel>();
 
                     ModelState.AddModelError(string.Empty, "Server error. Please contact administrator.");
